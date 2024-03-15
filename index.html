@@ -16,7 +16,10 @@
         </div>
         <!-- <button onclick="scientific.html" id="sc">Scientific</button> -->
         <div class="buttons">
+            <button onclick="clearAll()">AC</button>
             <button onclick="clearDisplay()">C</button>
+            <button onclick="appendParenthesis()">( )</button>
+            <button onclick="backspace()" id="backspace">⌫</button>
             <button onclick="appendNumber('7')">7</button>
             <button onclick="appendNumber('8')">8</button>
             <button onclick="appendNumber('9')">9</button>
@@ -31,11 +34,8 @@
             <button onclick="appendOperator('-')" id="op">-</button>
             <button onclick="appendDecimal()">.</button>
             <button onclick="appendNumber('0')">0</button>
-            <button onclick="backspace()" id="backspace">⌫</button>
-            <button onclick="appendOperator('+')" id="op">+</button>
-            <button onclick="appendParenthesis()">( )</button>
-            <button onclick="clearAll()">AC</button>
             <button onclick="calculate()" id="equals">=</button>
+            <button onclick="appendOperator('+')" id="op">+</button>
         </div>
     </div>
     <script src="script.js"></script>
