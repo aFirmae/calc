@@ -64,11 +64,11 @@ function appendDecimal() {
         clearDisplay();
         lastKeyWasEqual = false;
     }
-    if (!userInputTextarea.value.includes('.')) {
+    const lastNumber = userInputTextarea.value.split(/[\+\-\*\/]/).pop();
+    if (!lastNumber.includes('.')) {
         userInputTextarea.value += '.';
     }
 }
-
 function clearDisplay() {
     userInputTextarea.value = '';
 }
